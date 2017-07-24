@@ -1,3 +1,1 @@
 Nuostabusis bootcamp projektas
-
-abc
