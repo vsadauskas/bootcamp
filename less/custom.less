@@ -18,10 +18,8 @@ font-family: "open sans";
 
 //HEADERIO NUSTATYMAI
 header {
-    //height: 70px;
-    //position: relative;
-    background-color: #000000;
-    }
+     background-color: #000000;
+}
 
 .headerdiv {
     width: 100%;
@@ -29,29 +27,28 @@ header {
     margin: 0 auto;
     position: relative;
     padding: @tarpelis;
-    }
-    a.navpic {
-        position: absolute;
-        padding-top: 9px;
-   }
-   .navigacija{
+}
+a.navpic {
+    position: absolute;
+    padding-top: 9px;
+}
+.navigacija{
     overflow: hidden;
-    
-    } 
+} 
    
-   .navigacija a {
+.navigacija a {
     float: right;
     display: block;
-    color: rgba(255, 255, 255, 0.69); 
+    color: #b0b0b0; 
     padding: 14px 16px;
     text-decoration: none;
     line-height: 1.4;
     font-family: "Open Sans";
     font-weight: 600;
     text-align: center;
- 
-    }
-    a:hover {
+}
+
+a:hover {
     background-color: #333333;
 }
 
@@ -63,12 +60,11 @@ header {
 
 //PAGRINDINIO BANERIO NUSTATYMAI
 .pagrindinis{
-  height: 640px; //galima iskomentinti man rodos nereikalingas
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  //position: relative;
+    height: 640px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 .pagrindinio_vidus {
     width: 100%;
@@ -76,10 +72,13 @@ header {
     margin: 0 auto;
     position: relative;
     padding: @tarpelis;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 94px;
  img {
-     position: absolute;
-     top: 110px;
-     //left: 165px;
+    //  position: absolute;
+    //  top: 110px;
+    
  }
  p {
      font-size: 16px;
@@ -87,17 +86,18 @@ header {
      color: rgba(255, 255, 255, 0.8);
      line-height: 1.438;
      text-align: left;
-     position: absolute;
-     width: 525px;
-     //left: 0px;
-     top: 355px;
+     position: relative;
+     padding-top: 30px;
+    //  position: absolute;
+    //  width: 525px;
+    //  top: 355px;
    }
    a.downbut {
     text-decoration: none;
     font-size: 15px;
     font-family: "Open Sans";
     font-weight: 600;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     text-align: left;
     position: absolute;
     border: 2px solid #fff;
@@ -113,9 +113,10 @@ header {
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-align: left;
-  position: absolute;
-  top: 200px;
-  width: 525px;
+  padding-top: 34px;
+//   position: absolute;
+//   top: 200px;
+//   width: 525px;
   text-transform: uppercase;
 &:after {
     content:" ";
@@ -123,20 +124,26 @@ header {
     height: 2px;
     background-color: #ffffff;
     display: inline-block;
-    position: absolute;
+    position: relative;
     left: 0px;
-    top: 115px;
+    //top: 115px;
     }
 }
-
+div.tekstine {
+    flex-basis: 67%;
+    padding-right: 200px;
+}
 
 div.forma {
-    width: 368px;
-    height: 368px;
-    background-color: white;
-    position: absolute;
-    right: 0px;
-    top: 140px;
+   // width: 368px;
+   flex-basis: 33%; 
+   height: 368px;
+   background-color: white;
+   margin-top: 30px;
+    // position: absolute;
+    position: relative;
+    //right: 0px;
+    // top: 140px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -1013,8 +1020,9 @@ a.down2 {
     [type="text"],
     [type="email"],
     textarea   {
+        width: 100%;
         padding-left: 10px;
-        width: 520px;
+        // width: 520px;
         font-size: 14px;
         font-family: "Open Sans";
         color: rgb(189, 189, 189);
@@ -1025,13 +1033,17 @@ a.down2 {
         padding-bottom: 8px;
   }
     textarea {
-        padding-bottom: 140px;
+        padding-bottom: 141px;
     }
     .desine {
+        
         padding-left: 32px;
+        flex-basis: 50%;
     }
     .kaire {
+        
         padding-right: 32px;
+        flex-basis: 50%;
     }
     [type="email"],
     [name="subject"]
@@ -1043,8 +1055,9 @@ a.down2 {
 }
 div.fleksai {
         width: 100%;
-        display: inline-flex;
+        display: flex;
         align-content: space-around;
+        align-items: flex-end;
     }
 
 //footer dalis
@@ -1122,6 +1135,9 @@ footer {
     div.forma {
         display: none; //formos nerodom
     }
+    .pagrindinio_vidus {
+    display: block; //nujungiam fleksa
+}
     //SOCIAL MEDIA dalis
     .tekstas p{
         display: none; //nerodom teksto
@@ -1137,6 +1153,12 @@ footer {
     div.tpav {
         display: none; //nerodom paveiksliuko
     }
+    .tabinner {
+        flex-direction: column;
+    }
+    .tabai {
+        flex-direction: row;
+    }
 }
 
 
@@ -1148,6 +1170,9 @@ footer {
 //PAGRINDINE DALIS SU FORMA 
 div.forma {
      display: none; //formos nerodom
+}
+.pagrindinio_vidus {
+    display: block; //nujungiam fleksa
 }
 //SOCIAL MEDIA dalis
 .tekstas p{
@@ -1164,6 +1189,18 @@ div.ico {
 div.tpav {
         display: none; //nerodom paveiksliuko
     }
+.tabinner {
+        flex-direction: column;
+    }
+.tabsection .tabinner .tabai {
+        flex-direction: row;
+        width: 100%;
+        align-items: stretch;
+        justify-content: space-around;
+        align-content: stretch;
+    }
+
+
 }
 
 
