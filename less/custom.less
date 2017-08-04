@@ -12,6 +12,7 @@ box-sizing: border-box;
 // nurodom default font family 
 body{
 font-family: "open sans";
+overflow-x: hidden;
 //background-color: black;
 }
 
@@ -79,7 +80,7 @@ a:hover {
         line-height: 1.438;
         text-align: left;
         position: relative;
-        padding-top: 30px;
+        padding-top: 50px;
     }
     a.downbut {
         text-decoration: none;
@@ -92,7 +93,7 @@ a:hover {
         border: 2px solid #fff;
         padding: 15px 30px;
         position: absolute;
-        top: 465px;
+        top: 455px;
     }   
 }
  h1 {
@@ -103,14 +104,16 @@ a:hover {
     text-align: left;
     padding-top: 34px;
     text-transform: uppercase;
+    position: relative;
     &:after {
         content:" ";
         width: 64px;
         height: 2px;
         background-color: #ffffff;
         display: inline-block;
-        position: relative;
+        position: absolute;
         left: 0px;
+        top: 142px;
     }
 }
 div.tekstine {
@@ -595,7 +598,7 @@ div.tpav {
     .pricinginner {
         width: 100%;
         max-width: @maxPlotis + @tarpelis * 2;
-        margin: 0 auto 0 auto;
+        margin: 0 auto;
         position: relative;
         padding: @tarpelis;
         padding-left: 0;
@@ -833,6 +836,7 @@ div.tpav {
             color: rgb(255, 255, 255);
             line-height: 1.2;
             text-align: center;
+            position: relative;
             &:after {
                     content:" ";
                     width: 65px;
@@ -840,7 +844,7 @@ div.tpav {
                     background-color: #ffffff;
                     display: inline-block;
                     position: absolute;
-                    top: 80px;
+                    top: 70px;
                     left: 50%;
                     transform: translateX(-50%);
             }
@@ -867,7 +871,7 @@ a.down2 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 165px;
+    top: 175px;
 }
 /******************************************************/
 //  CONTACTS
@@ -1280,8 +1284,8 @@ div.forma {
     }
     h1:after{
     position: absolute;
-    top: 190px;
-    left:16px;
+    top: 125px;
+    //left:16px;
     }
     .pagrindinio_vidus a.downbut {
         width: 90%;
@@ -1420,7 +1424,7 @@ div.tpav {
 }
     div.options{
         flex-direction: column;
-        width: 310px;
+        //width: 310px;
     }
 .basic,
 .prof,
@@ -1437,6 +1441,7 @@ div.tpav {
 /***********************************************/
     .customers .customersinner .atsiliepimai {
         flex-direction: column;
+        align-items: center;
     }
     .customers .customersinner h2:after {
     position: absolute;
