@@ -254,23 +254,7 @@ hr{
             width: 110px;
             display: inline-flex;
             flex-direction: column;
-            a.tab1 {
-                height: 110px;
-                background-color: #ff8b38;
-                font-size: 15px;
-                font-family: "Open Sans";
-                color: rgb(255, 255, 255);  
-                font-weight: bold;
-                line-height: 1.333;
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
-                margin-bottom: 1px;
-                text-align: center;
-                text-decoration: none;
-                text-transform: uppercase;
-                padding-top: 47px;
-            }
-            a.tab2 {
+            .tablinks{
                 height: 110px;
                 background-color: #333333;
                 font-size: 15px;
@@ -282,28 +266,61 @@ hr{
                 text-align: center;
                 text-decoration: none;
                 text-transform: uppercase;
-                padding-top: 47px;
+                border: none;
+            
+                
             }
-            a.tab3 {
-                height: 110px;
-                background-color: #333333;
-                font-size: 15px;
-                font-family: "Open Sans";
-                color: rgb(255, 255, 255);
-                font-weight: bold;
-                line-height: 1.333;
-                border-bottom-left-radius: 5px;
-                border-bottom-right-radius: 5px;
-                text-align: center;
-                text-decoration: none;
-                text-transform: uppercase;
-                padding-top: 47px
-            }
+//            a.tab1 {
+//                height: 110px;
+//                background-color: #ff8b38;
+//                font-size: 15px;
+//                font-family: "Open Sans";
+//                color: rgb(255, 255, 255);  
+//                font-weight: bold;
+//                line-height: 1.333;
+//                border-top-left-radius: 5px;
+//                border-top-right-radius: 5px;
+//                margin-bottom: 1px;
+//                text-align: center;
+//                text-decoration: none;
+//                text-transform: uppercase;
+//                padding-top: 47px;
+//            }
+//            a.tab2 {
+//                height: 110px;
+//                background-color: #333333;
+//                font-size: 15px;
+//                font-family: "Open Sans";
+//                color: rgb(255, 255, 255);
+//                font-weight: bold;
+//                line-height: 1.333;
+//                margin-bottom: 1px;
+//                text-align: center;
+//                text-decoration: none;
+//                text-transform: uppercase;
+//                padding-top: 47px;
+//            }
+//            a.tab3 {
+//                height: 110px;
+//                background-color: #333333;
+//                font-size: 15px;
+//                font-family: "Open Sans";
+//                color: rgb(255, 255, 255);
+//                font-weight: bold;
+//                line-height: 1.333;
+//                border-bottom-left-radius: 5px;
+//                border-bottom-right-radius: 5px;
+//                text-align: center;
+//                text-decoration: none;
+//                text-transform: uppercase;
+//                padding-top: 47px
+//            }
         }
         .ttekstas {
             width: 660px;
             padding-left: 100px;
             padding-right: 50px;
+            //display: none;
             h6 {
                 font-size: 20px;
                 font-family: "Open Sans";
@@ -339,12 +356,21 @@ hr{
                 text-transform: capitalize;
             }
         }
-    }
+    }   
 }
+.tabsection .tabinner .tabai button.tablinks.active{
+    background-color: #ff8b38;
+}
+
 div.tpav {
     position: absolute;
     right: 0px;
 }
+#tab1{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
 /******************************************************/
 //           SUBLIST SECTION
 /******************************************************/
@@ -975,6 +1001,29 @@ div.fleksai {
     align-items: flex-end;
 }
 /*******************************************************/
+// BUTTON SECTION
+/*******************************************************/
+//#myBtn {
+//    display: none; /* Hidden by default */
+//    position: fixed; /* Fixed/sticky position */
+//    bottom: 20px; /* Place the button at the bottom of the page */
+//    right: 30px; /* Place the button 30px from the right */
+//    z-index: 99; /* Make sure it does not overlap */
+//    border: none; /* Remove borders */
+//    outline: none; /* Remove outline */
+//    background-color: #ff9b51; /* Set a background color */
+//    color: white; /* Text color */
+//    cursor: pointer; /* Add a mouse pointer on hover */
+//    padding: 15px; /* Some padding */
+//    border-radius: 20px; /* Rounded corners */
+//}
+//
+//#myBtn:hover {
+//    background-color: #555; /* Add a dark-grey background on hover */
+//}
+
+
+/*******************************************************/
 //       FOTER SECTION
 /*******************************************************/
 footer {
@@ -1342,7 +1391,11 @@ div.tpav {
         flex-basis: 30%;
         border-radius: 5px;
     }   
-
+    button.tablinks.active,
+    button.tablinks {
+        flex-basis: 30%;
+        border-radius: 5px;
+    }
 /******************************************************/
 //           SUBLIST SECTION
 /******************************************************/   

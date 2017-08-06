@@ -20,14 +20,13 @@
         
              <a href="index.html" id="pic" class="navpic"><img src="images/logo-compressor.png" width="80px" style="float:left" ></a>     
             <div class="navigacija" id="manonavig">
-                <a href="#features">Features</a>
-                <a href="#about">About</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#reviews">Reviews</a>
-                <a href="#contact">Contact</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                <a href="#contact">Contact</a>    
+                <a href="#reviews">Reviews</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
             </div>
-        
     </div>
 </header>
 
@@ -95,17 +94,41 @@
 <!-- tab sekcija -->
 <div id="features" class="tabsection">
     <div class="tabinner">
+        
         <div class="tabai">
-            <a href="#" class="tab1">Tab 1</a>
-            <a href="#" class="tab2">Tab 2</a>
-            <a href="#" class="tab3">tab 3</a>
+            <button class="tablinks active" onclick="openTab(event, 'tab1')" style="border-top-left-radius: 5px; border-top-right-radius: 5px;">Tab 1</button>
+            <button class="tablinks" onclick="openTab(event, 'tab2')">Tab 2</button>
+            <button class="tablinks" onclick="openTab(event, 'tab3')" style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">Tab 3</button>
+<!--
+            <a href="#" class="tablinks">Tab 1</a>
+            <a href="#" class="tablinks">Tab 2</a>
+            <a href="#" class="tablinks">tab 3</a>
+-->
         </div>
-        <div class="ttekstas">
+        
+        <div id="tab1" class="ttekstas">
             <h6>Tabs with soft transitioning effect.</h6>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
             <p class="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
             <a href="#" class="mygt">Download</a>
         </div>
+          <div id="tab2" class="ttekstas" style="display: none">
+            <h6>Tabs with soft transitioning effect.</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+            
+            
+        </div>
+          <div id="tab3" class="ttekstas" style="display: none">
+            <h6>Tabs with soft transitioning effect.</h6>
+            <p class="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+        </div>
+        
+        
+        
+        
+        
         <div class="tpav">
         <img src="images/veidrodinis-compressor.png">
         </div>
@@ -310,7 +333,8 @@
         </form>
     </div>
 </div>
-
+        
+<!--<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>-->
 
 <!-- footeris -->
 <footer>
