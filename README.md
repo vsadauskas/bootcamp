@@ -10,6 +10,4 @@ Live preview: http://mqz8du.axshare.com/#g=1&p=adaptive
 ### WP
 - ~~sutvarkyti likusias sekcijas~~
 - ~~kodel neveikia listu sekcija~~
-- paziureti kaip patvarkyti headerio meniu
 - ~~peržiūrėti nušokančias linijas ir jas patvarkyti~~
-- ~~responshito~~
